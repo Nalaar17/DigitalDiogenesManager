@@ -12,8 +12,9 @@ import com.dd.data.Videogame;
 public class DigitalDiogenesManager {
 
 	List<GeekStuff> geekStuff = new ArrayList<>();
-	public void findStuffByName(String name) {
-		Stream<GeekStuff> stuffStream = geekStuff.stream();
+	Stream<GeekStuff> stuffStream = geekStuff.stream();
+	
+	/*public void findStuffByName(String name) {
 		//stuffStream.filter(name -> ((List<GeekStuff>) name).contains(name))
 		//.forEach(System.out::print);
 		;
@@ -29,6 +30,11 @@ public class DigitalDiogenesManager {
                                             //.forEach((GeekStuff g) ->System.out::println);
 			          
 	}*/
+	
+	
+	
+		
+	
 	
 	public int gamesByPlatform(Platform platform, List<Videogame> videogames) {
 		int count = 0;

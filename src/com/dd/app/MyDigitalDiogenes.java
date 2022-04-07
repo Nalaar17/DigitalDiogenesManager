@@ -2,6 +2,7 @@ package com.dd.app;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.stream.Collectors;
 
 import com.dd.data.Book;
 import com.dd.data.DigitalDiogenesManager;
@@ -66,6 +67,10 @@ public class MyDigitalDiogenes {
 		geekStuff.addAll(videogames);
 		geekStuff.addAll(books);
 		
+		geekStuff.add(new Videogame("Baba is You", "Puzzle", 9.2, Platform.PC, "Hempuli", true, false));
+		geekStuff.add(new Book("A Storm of Swords", "Epic Fantasy", 10, "George R.R. Martin", true, true));
+		
+		
 		ddm.printGamesByPlatform(Platform.SONY_PS4);
 		System.out.println("!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!");
 		ddm.getTops(3);
@@ -76,6 +81,8 @@ public class MyDigitalDiogenes {
 		System.out.println(books);
 		System.out.println("-------------------------------------------------------------------------------------------------");
 		System.out.println(geekStuff);
+		
+
 	}
 
 
